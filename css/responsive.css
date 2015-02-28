@@ -1,0 +1,146 @@
+@media (min-width:320px) and (max-width:767px){
+	.header{
+		background-size:auto auto;
+	}
+	.navh{
+		height:auto;
+		padding-bottom:10px;
+	}
+	.llinks{
+		margin:5px;
+	}
+	.howitworks{
+		padding-top:20px;
+	}
+
+	.hexagon {
+		position: relative;
+		width: 35px; 
+		height: 20.21px;
+		background-color: #ffffff;
+		margin: 10.10px 18% 0px 0px;
+		border-left: solid 3px #cacfce;
+		border-right: solid 3px #cacfce;
+	}
+
+	.hexagon:before,
+	.hexagon:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		width: 24.75px;
+		height: 24.75px;
+		-webkit-transform: scaleY(0.5774) rotate(-45deg);
+		-ms-transform: scaleY(0.5774) rotate(-45deg);
+		transform: scaleY(0.5774) rotate(-45deg);
+		background-color: inherit;
+		left: 2.1256px;
+	}
+
+	.hexagon:before {
+		top: -12.3744px;
+		border-top: solid 4.2426px #cacfce;
+		border-right: solid 4.2426px #cacfce;
+	}
+
+	.hexagon:after {
+		bottom: -12.3744px;
+		border-bottom: solid 4.2426px #cacfce;
+		border-left: solid 4.2426px #cacfce;
+	}
+
+	.hexagon.active {
+		position: relative;
+		width: 35px; 
+		height: 20.21px;
+		background-color: #469db9;
+		margin: 10.10px 18% 0px 0px;
+		border-left: solid 8px #469db9;
+		border-right: solid 8px #469db9;
+	}
+
+	.hexagon.active:before,
+	.hexagon.active:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		width: 24.75px;
+		height: 24.75px;
+		-webkit-transform: scaleY(0.5774) rotate(-45deg);
+		-ms-transform: scaleY(0.5774) rotate(-45deg);
+		transform: scaleY(0.5774) rotate(-45deg);
+		background-color: inherit;
+		left: -2.8744px;
+	}
+
+	.hexagon.active:before {
+		top: -12.3744px;
+		border-top: solid 11.3137px #469db9;
+		border-right: solid 11.3137px #469db9;
+	}
+
+	.hexagon.active:after {
+		bottom: -12.3744px;
+		border-bottom: solid 11.3137px #469db9;
+		border-left: solid 11.3137px #469db9;
+	}
+	.num{
+		top:0px;
+	}
+	.hexagon.active .num{
+		top:0px;
+	}
+	.text{
+		width:auto;
+		top:40px
+	}
+	.hexagon.active .text{
+		top:40px
+	}
+	.content{
+		position:relative;
+		width:100%;
+	}
+	.slider-img img{
+		width:100%;
+	}
+	.foot-links2{
+		text-align:center;
+		padding:0px;
+	}
+	.sns{
+		text-align:center;
+	}
+	.snsicon{
+		text-align:center;
+		margin-right:45px;
+	}
+	.sub-container{
+		width:100%;
+	}
+	
+	.header-right{ float:left; }
+	
+}
+
+@media (min-width:768px) and (max-width:991px){
+	.bcontent{
+		padding:15px 10px;
+	}
+	.howitworks{
+		padding-top:30px;
+	}
+	.hexagon{
+		margin:0px 144px 0px 0px;
+	}
+	.hexagon.active{
+		margin:0px 144px 0px 0px;
+	}
+	.content{
+		position:relative;
+		width:100%;
+	}
+	.logo-foot img{
+		width:100%;
+	}
+}

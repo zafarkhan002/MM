@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MM_MainPage</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<!-- Calender -->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Exo:400,500,600,700,800,500italic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/build.css"/>
+
+</head>
+<body class="subscribe">
+	<!-- NAVIGATION -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#"><img src="images/logo_inner.png" alt="" /></a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#">How it works</a></li>
+			<li><a href="#">Features</a></li>
+			<li><a href="#">Login</a></li>
+			<li><a href="#"><strong>Sign up</strong></a></li>
+		  </ul>
+		</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!-- NAVIGATION -->
+	<!-- HEADER -->
+	<div class="header-inner">
+		<div class="container">
+			<h3>Sign Up</h3>
+			<p>Please follow the below steps in order to create your Motivation Market account.</p>
+		</div>
+		<div class="caret-down"></div>
+	</div>
+	<div class="clearfix">&nbsp;</div>
+	<div class="clearfix">&nbsp;</div>
+	<!-- HEADER -->
+	<!-- CONTENT -->
+	<div class="sub-container" role="tabpanel">
+		<div class="tab-box top-row" role="tablist">
+			<h4 class="active">Choose Your Account Type</h4>
+			<div class="sec1 left">
+				<h3 class="h3">Standard Account</h3>
+				<p class="ltext text-center">
+					Standard account is for members who are looking for a personal trainer, looking for buddies or looking to attend meetups & events.
+				</p>
+				<a href="#standard" aria-controls="standard" role="tab" data-toggle="tab" class="btn btn-select">Select</a>
+				<div class="arrow-down"><img src="images/caret-down.png" alt="" /></div>
+			</div>
+			<div class="sec1 right active">
+				<h3 class="h3">Trainer Account</h3>
+				<p class="ltext text-center">
+					Standard account is for members who are looking for a personal trainer, looking for buddies or looking to attend meetups & events.
+				</p>
+				<a href="#trainer" aria-controls="trainer" role="tab" data-toggle="tab" class="btn btn-select">Select</a>
+				<div class="arrow-down"><img src="images/caret-down.png" alt="" /></div>
+			</div>
+		</div>
+		<div class="clearfix">&nbsp;</div>
+		<div class="clearfix">&nbsp;</div>
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="standard">standard</div>
+			<div role="tabpanel" class="tab-pane active" id="trainer">
+				<div class="tab-box">
+					<h4>Fill Your Details</h4>			
+					<form class="form" role="form">
+						<div class="row">
+							<div class="form-group col-md-12 col-sm-12">
+								<label for="fullname">Full Name</label>
+								<input type="text" class="form-control" id="fullname" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-md-6 col-sm-6">
+								<label for="email">Email</label>
+								<input type="email" class="form-control" id="email" />
+							</div>
+							<div class="form-group col-md-6 col-sm-6">
+								<label for="confirm-email">Confirm your email</label>
+								<input type="email" class="form-control" id="confirm-email" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-md-6 col-sm-6">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" id="password" />
+							</div>
+							<div class="form-group col-md-6 col-sm-6">
+								<label for="confirm-password">Confirm your password</label>
+								<input type="password" class="form-control" id="confirm-password" />
+							</div>
+						</div>
+						<div class="row">
+                      <div class="form-group col-md-6 col-sm-6">
+								<label for="dob">Date of birth</label>
+								<input type="text" class="form-control" id="dob" />
+                                <span class="fa fa-calendar calender-span"></span>
+							</div>
+							<div class="form-group col-md-6 col-sm-6">
+								<label>Gender</label>
+								<div class="clearfix"></div>
+								<div class="row">
+									<div class="col-md-5 col-sm-5">
+										<div class="radio ">
+											<input type="radio" name="gender" id="male" value="male" />
+											<label for="male">
+												Male
+											</label>
+										</div>
+									</div>
+									<div class="col-md-5">
+										<div class="radio col-md-5 col-sm-5">
+											<input type="radio" name="gender" id="female" value="female" />
+											<label for="female">
+												Female
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+						<div class="form-group col-md-6 col-sm-6">
+							<label>Training area <span>4 item(s) selected</span></label>
+							<div class="target">
+								<div id="targetarea">
+									<ul>
+										<li class="checkbox"><input type="checkbox" id="ch1"><label for="ch1">Any</label></li>
+										<li class="checkbox"><input type="checkbox" id="ch2"><label for="ch2">Air Sports</label></li>
+										<li class="checkbox"><input type="checkbox" id="ch3"><label for="ch3">Archery</label></li>
+										<li class="checkbox"><input type="checkbox" id="ch4"><label for="ch4">Ball over net games</label></li>
+										<li class="checkbox"><input type="checkbox" id="ch5"><label for="ch5">Basketball family</label></li>
+										<li class="checkbox"><input type="checkbox" id="ch6"><label for="ch6">Basketball family</label></li>
+										<li class="checkbox"><input type="checkbox" id="ch7"><label for="ch7">Basketball family</label></li>
+										<li class="checkbox"><input type="checkbox" id="ch8"><label for="ch8">Check me out</label></li>
+										<li class="checkbox"><input type="checkbox" id="ch9"><label for="ch9">Check me out</label></li>
+										<li class="checkbox"><input type="checkbox" id="ch10"><label for="ch10">Check me out</label></li>
+										<li class="checkbox"><input type="checkbox" id="ch11"><label for="ch11">Check me out</label></li>
+										<li class="checkbox"><input type="checkbox" id="ch12"><label for="ch12">Check me out</label></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="form-group col-md-6 col-sm-6">
+							<label for="postalcode">Postal Code</label>
+							<input type="text" class="form-control" id="postalcode" />
+							<div class="postalcode">
+								<i class="fa fa-cogs"></i> <span> <i class="fa fa-check"></i> Saffron Walden, Essex </span>(correct?)
+							</div>
+						</div>
+						</div>
+						<div class="row">
+						<div class=" col-md-12 col-sm-12">
+							<div class="checkbox">
+								<input type="checkbox" id="newsletter"> <label for="newsletter">Receive periodic newsletters</label>
+							</div>
+						</div>
+						</div>
+						<div class="row">
+						<div class=" col-md-12 col-sm-12">
+							<div class="checkbox">
+								<input type="checkbox" id="terms"> <label for="terms">I agree to the <a href="#">Terms &amp; Conditions</label>
+							</div>
+						</div>
+						</div>
+						<div class="row captcha">
+						<div class="form-group col-md-12 col-sm-12">
+							<div class="row">
+								<div class="col-md-3 col-sm-3">
+									<img src="images/captcha.png" alt="" class="" />
+								</div>
+								<div class="col-md-4 col-sm-5">
+									<input type="text" class="form-control" id="captcha" placeholder="Enter the captcha">
+								</div>
+							</div>
+						</div>	
+						</div>
+						<div class="row">
+							<div class="form-group col-md-12 col-sm-12">
+								<button type="submit" class="btn btn-box">Create account</button>
+							</div>
+						</div>	
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">&nbsp;</div>
+		<div class="clearfix">&nbsp;</div>
+		<div class="tab-box below-row" role="tablist">
+			<h4 class="active">Choose Your Subscription</h4>
+			<div class="sec1 left text-center">
+				<h3 class="h3 ">Free</h3>
+				<p class="ltext text-center">
+					 For trainers who <br /> simply want to list themselve and their trainings on Motivation Market.
+				</p>
+				<a href="#free" aria-controls="free" role="tab" data-toggle="tab" class="btn btn-select">Select</a>
+				<div class="arrow-down"><img src="images/caret-down.png" alt="" /></div>
+			</div>
+			<div class="sec1 right active text-center">
+				<h3 class="h3">Premium</h3>
+				<p class="ltext text-center">
+					 For trainers who <br /> want to receive bookings for their trainings and don't want to be limited.
+				</p>
+				<a href="#premium" aria-controls="premium" role="tab" data-toggle="tab" class="btn btn-select">Select</a>
+				<div class="arrow-down"><img src="images/caret-down.png" alt="" /></div>
+			</div>
+		</div>
+		<div class="clearfix">&nbsp;</div>
+		<div class="clearfix">&nbsp;</div>
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="free"></div>
+			<div role="tabpanel" class="tab-pane active" id="premium">
+				<form class="form-inline">
+					<div class="tab-box">
+						<div class="form-in">
+							<div class="form-group">
+								<label class="sublabel">Choose Subscription Period</label>
+							</div>
+							<div class="form-group">
+								<div class="radio">
+									<input type="radio" name="subscription" id="plan1" value="plan1" />
+									<label for="plan1">
+										<strong>&pound;9.99</strong>/Monthly
+									</label>
+								</div>
+								<div class="radio">
+									<input type="radio" name="subscription" id="plan2" value="plan2" />
+									<label for="plan2">
+										 <strong>&pound;5,99</strong>/Quarterly 
+									</label>
+								</div>
+								<div class="radio">
+									<input type="radio" name="subscription" id="plan3" value="plan3" />
+									<label for="plan3">
+										<strong>&pound;3,99</strong>/Yearly
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="sec">
+							You will be charged <strong>&pound;150</strong> quarterly
+							<div class="arrow-down"><img src="images/caret-down.png" alt="" /></div>
+						</div>
+					</div>
+				</form>
+				<div class="clearfix">&nbsp;</div>
+				<div class="clearfix">&nbsp;</div>
+				<div class="form-group col-md-12 text-center">
+					<button type="submit" class="btn btn-box">Pay Now</button>
+				</div>
+				<h4 class="text-center"><i class="fa fa-cogs"></i> You will now will be redirected to PayPal in order to finilise your subscription.</h4>
+				<div class="clearfix">&nbsp;</div>
+				<h4 class="text-center">Motivation Market subscription service is provided by</h4>
+				<p class="text-center"><img src="images/paypal.png" alt="" /></p>
+				<div class="clearfix">&nbsp;</div>
+			</div>			
+		</div>
+	</div>
+	<!-- CONTENT -->
+	<div class="clearfix"></div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 logo-foot">
+					<img src="images/logo_footer.png" alt="" />
+				</div>
+				<div class="col-md-2 col-sm-2 foot-links">
+					<a href="#">learn more about us</a>
+					<hr />
+					<a href="#">press & media</a>
+				</div>
+				<div class="col-md-4 col-sm-3 foot-links2">
+					For Help: <a href="#">FAQ</a> pages or <a href="#">Contact Us</a> <br />
+					For Info : <a href="#">Document Repisotry</a>
+				</div>
+				<div class="col-md-2 col-sm-3 sns">
+					<a href="#" class="snsicon g"></a>
+					<a href="#" class="snsicon t"></a>
+					<a href="#" class="snsicon f"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer2">
+		<div class="container">
+			Copyright 2014 Motivation Market. &nbsp;&nbsp; | &nbsp;&nbsp; <a href="#"> Terms &amp; Conditions </a> &nbsp;&nbsp;  | &nbsp;&nbsp;  <a href="#"> Privacy Policy </a>
+
+			<a href="mailto:info@motivationmarket.com" class="pull-right">info@motivationmarket.com
+			</a>
+		</div>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/enscroll-0.6.1.min.js"></script>
+<!--Calender UI Jquery -->
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+ <script>
+$(function() {
+$( "#dob" ).datepicker();
+});
+</script>
+
+	<script type="text/javascript">
+			$('#targetarea').enscroll({
+				showOnHover: false,
+				verticalTrackClass: 'track3',
+				verticalHandleClass: 'handle3'
+			});	
+	</script>
+	<script type="text/javascript">
+		$('.btn-select').click(function(){			
+			 var match= $(this).parents().eq(1).attr('class');			 
+			  var match = match.split(' ');
+				$( '.'+ match[1]+' h4' ).removeClass( "active" );
+				$( '.'+ match[1]+' .sec1' ).removeClass( "active" );				
+				 $( this ).parent().addClass("active");
+				$('.'+ match[1]+' h4').addClass('active');
+		});
+
+	</script>
+</body>
+</html>

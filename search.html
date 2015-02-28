@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MM_MainPage</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Exo:400,500,600,700,800,500italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/build.css"/>
+<!--Range CSS-->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+</head>
+<body class="search">
+<!-- NAVIGATION -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#"><img src="images/logo_inner.png" alt="" /></a> </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#"><strong>Sign up</strong></a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- NAVIGATION -->
+<!-- HEADER -->
+<div class="header-inner">
+  <div class="container">
+    <h3 class="text-left">Search for a Buddy</h3>
+  </div>
+</div>
+<div class="clearfix">&nbsp;</div>
+<div class="clearfix">&nbsp;</div>
+<!-- HEADER -->
+<!-- CONTENT -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="tab-box">
+        <form class="search-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="form-group">
+            <label>Interested Sports</label>
+            <div class="target">
+              <div id="targetarea">
+                <ul>
+                  <li class="checkbox">
+                    <input type="checkbox" id="ch1">
+                    <label for="ch1">Any</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="ch2">
+                    <label for="ch2">Air Sports</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="ch3">
+                    <label for="ch3">Archery</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="ch4">
+                    <label for="ch4">Ball over net games</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="ch5">
+                    <label for="ch5">Basketball family</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="ch6">
+                    <label for="ch6">Basketball family</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="ch7">
+                    <label for="ch7">Basketball family</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="ch8">
+                    <label for="ch8">Check me out</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="ch9">
+                    <label for="ch9">Check me out</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="ch10">
+                    <label for="ch10">Check me out</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="ch11">
+                    <label for="ch11">Check me out</label>
+                  </li>
+                  <li class="checkbox">
+                    <input type="checkbox" id="ch12">
+                    <label for="ch12">Check me out</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="gender">
+              <label>Gender</label>
+              <div class="clearfix"></div>
+              <div class="row">
+                <div class="col-md-5 col-sm-5">
+                  <div class="radio ">
+                    <input type="radio" name="gender" id="male" value="male" />
+                    <label for="male"> Male </label>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="radio col-md-5 col-sm-5">
+                    <input type="radio" name="gender" id="female" value="female" />
+                    <label for="female"> Female </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="age-range">
+              <label>Age</label>
+              <div class="age-between">
+                <input type="text" id="serving" readonly="">
+              </div>
+              <div id="age-range"></div>
+            </div>
+          </div>
+          <div class="form-group selectbox">
+            <label for="name">Country</label>
+            <select class="form-control">
+              <option>Any</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <label for="name">Town <i class="fa fa-cogs"></i></label>
+            <select class="form-control">
+              <option>Any</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <label for="name">Search Radius</label>
+            <select class="form-control">
+              <option>26+ Mile</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-box filter-btn"><i class="fa fa-filter"></i> Filter </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="pull-left result"><span>402</span> result found</div>
+      <div class="pull-right sort"> sort by
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <span class="pull-left">Newest</span> <span class="caret pull-right"></span> </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Dropdown link</a></li>
+            <li><a href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-box user-box">
+        <div class="user-img"><img src="images/howitworks.png" alt="" /></div>
+        <div class="col-md-8 user-details">
+          <h3>John Smith <span>(24)</span> <span> <a href="#"><img src="images/t.png" alt="" /></a><a href="#"><img src="images/u.png" alt="" /></a><a href="#"><img src="images/ud.png" alt="" /></a><a href="#"><img src="images/r.png" alt="" /></a> </span> </h3>
+          <p><i class="fa fa-map-marker"></i> London, Victoria</p>
+        </div>
+        <div class="clearfix"></div>
+        <p class="train"><span>Trains for</span> Running, Swimming, Cycling</p>
+      </div>
+      <div class="tab-box user-box">
+        <div class="user-img"><img src="images/howitworks.png" alt="" /></div>
+        <div class="col-md-8 user-details">
+          <h3>John Smith <span>(24)</span> <span>  <a href="#"><img src="images/t.png" alt="" /></a><a href="#"><img src="images/u.png" alt="" /></a><a href="#"><img src="images/ud.png" alt="" /></a><a href="#"><img src="images/r.png" alt="" /></a> </span> </h3>
+          <p><i class="fa fa-map-marker"></i> London, Victoria</p>
+        </div>
+        <div class="clearfix"></div>
+        <p class="train"><span>Trains for</span> Running, Swimming, Cycling</p>
+      </div>
+      <div class="tab-box user-box">
+        <div class="user-img"><img src="images/howitworks.png" alt="" /></div>
+        <div class="col-md-8 user-details">
+          <h3>John Smith <span>(24)</span> <span>  <a href="#"><img src="images/t.png" alt="" /></a><a href="#"><img src="images/u.png" alt="" /></a><a href="#"><img src="images/ud.png" alt="" /></a><a href="#"><img src="images/r.png" alt="" /></a> </span> </h3>
+          <p><i class="fa fa-map-marker"></i> London, Victoria</p>
+        </div>
+        <div class="clearfix"></div>
+        <p class="train"><span>Trains for</span> Running, Swimming, Cycling</p>
+      </div>
+      <div class="tab-box user-box">
+        <div class="user-img"><img src="images/howitworks.png" alt="" /></div>
+        <div class="col-md-8 user-details">
+          <h3>John Smith <span>(24)</span> <span>  <a href="#"><img src="images/t.png" alt="" /></a><a href="#"><img src="images/u.png" alt="" /></a><a href="#"><img src="images/ud.png" alt="" /></a><a href="#"><img src="images/r.png" alt="" /></a> </span> </h3>
+          <p><i class="fa fa-map-marker"></i> London, Victoria</p>
+        </div>
+        <div class="clearfix"></div>
+        <p class="train"><span>Trains for</span> Running, Swimming, Cycling</p>
+      </div>
+      <div class="tab-box user-box">
+        <div class="user-img"><img src="images/howitworks.png" alt="" /></div>
+        <div class="col-md-8 user-details">
+          <h3>John Smith <span>(24)</span> <span>  <a href="#"><img src="images/t.png" alt="" /></a><a href="#"><img src="images/u.png" alt="" /></a><a href="#"><img src="images/ud.png" alt="" /></a><a href="#"><img src="images/r.png" alt="" /></a> </span> </h3>
+          <p><i class="fa fa-map-marker"></i> London, Victoria</p>
+        </div>
+        <div class="clearfix"></div>
+        <p class="train"><span>Trains for</span> Running, Swimming, Cycling</p>
+      </div>
+      <div class="tab-box user-box">
+        <div class="user-img"><img src="images/howitworks.png" alt="" /></div>
+        <div class="col-md-8 user-details">
+          <h3>John Smith <span>(24)</span> <span>  <a href="#"><img src="images/t.png" alt="" /></a><a href="#"><img src="images/u.png" alt="" /></a><a href="#"><img src="images/ud.png" alt="" /></a><a href="#"><img src="images/r.png" alt="" /></a> </span> </h3>
+          <p><i class="fa fa-map-marker"></i> London, Victoria</p>
+        </div>
+        <div class="clearfix"></div>
+        <p class="train"><span>Trains for</span> Running, Swimming, Cycling</p>
+      </div>
+      <nav class="text-center">
+        <ul class="pagination">
+          <li><a href="#">1</a></li>
+          <li class="active"><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li class="disable"><a href="#">.....</a></li>
+          <li><a href="#">32</a></li>
+        </ul>
+      </nav>
+	   <div class="clearfix"> &nbsp;</div>
+	   <div class="clearfix"> &nbsp;</div>
+    </div>
+  </div>
+</div>
+<!-- CONTENT -->
+<div class="clearfix"></div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 logo-foot"> <img src="images/logo_footer.png" alt="" /> </div>
+      <div class="col-md-2 col-sm-2 foot-links"> <a href="#">learn more about us</a>
+        <hr />
+        <a href="#">press & media</a> </div>
+      <div class="col-md-4 col-sm-3 foot-links2"> For Help: <a href="#">FAQ</a> pages or <a href="#">Contact Us</a> <br />
+        For Info : <a href="#">Document Repisotry</a> </div>
+      <div class="col-md-2 col-sm-3 sns"> <a href="#" class="snsicon g"></a> <a href="#" class="snsicon t"></a> <a href="#" class="snsicon f"></a> </div>
+    </div>
+  </div>
+</div>
+<div class="footer2">
+  <div class="container"> Copyright 2014 Motivation Market. &nbsp;&nbsp; | &nbsp;&nbsp; <a href="#"> Terms &amp; Conditions </a> &nbsp;&nbsp;  | &nbsp;&nbsp; <a href="#"> Privacy Policy </a> <a href="mailto:info@motivationmarket.com" class="pull-right">info@motivationmarket.com </a> </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/enscroll-0.6.1.min.js"></script>
+<!--Range Jquery-->
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script>
+$( "#age-range" ).slider({
+			range: true,
+			min: 10,
+			max: 30,
+			values: [ 18, 24 ],
+			slide: function( event, ui ) {
+				$( "#serving" ).val( "Between " + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+			}
+		});
+
+
+$( "#serving" ).val( "Between " + $( "#age-range" ).slider( "values", 0 ) +
+			" - " + $( "#age-range" ).slider( "values", 1 ) );
+
+
+</script>
+<!--END-->
+<script type="text/javascript">
+			$('#targetarea').enscroll({
+				showOnHover: false,
+				verticalTrackClass: 'track3',
+				verticalHandleClass: 'handle3'
+			});	
+	</script>
+<script type="text/javascript">
+		$('.btn-select').click(function(){			
+			$( ".tab-box h4, .tab-box .sec1" ).removeClass( "active" )
+			 $( this ).parent().addClass("active");
+			 var match= $(this).parents().eq(1).attr('class');			 
+			  var match = match.split(' ');
+				$('.'+ match[1]+' h4').addClass('active');
+		});
+
+	</script>
+</body>
+</html>
